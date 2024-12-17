@@ -18,7 +18,7 @@ variable "region" {
 variable "allow_ports" {
   description = "List of Ports to open for server"
   type        = list
-  default     = ["80", "443", "22", "8080", "9090", "50000"]
+  default     = ["80", "443", "22", "8080", "9090", "9100"]
 }
 
 variable "enable_detailed_monitoring" {
