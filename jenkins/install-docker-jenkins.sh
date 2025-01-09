@@ -15,7 +15,7 @@ docker volume create jenkins-master-home
 echo "Starting Jenkins container"
 docker run -d --restart=always --name jenkins-master \
   -v jenkins-master-home:/var/jenkins_home \
-  -p 8080:8080 -p 50000:50000 \
+  -p 8080:8080  \
   jenkins/jenkins:lts
 
 # Wait for the Jenkins container to start
